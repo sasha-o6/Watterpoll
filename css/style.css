@@ -545,8 +545,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 1em 0;
 }
 
@@ -638,10 +636,9 @@ h3 {
             flex-direction: column;
     margin: 5px auto;
     max-width: 100%;
-    padding: 20;
   }
-  .information-regione .layout .coment-box {
-    max-width: 500px;
+  .information-regione .coment-box {
+    max-width: 365px;
   }
   .questions .input-box {
     -webkit-box-orient: horizontal;

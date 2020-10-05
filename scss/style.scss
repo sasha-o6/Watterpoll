@@ -452,7 +452,6 @@ h3{
     }
     .feedback-box{
         display: flex;
-        flex-wrap: wrap;
         margin: 1em 0;
 
         .text{
@@ -537,11 +536,9 @@ h3{
             flex-direction: column;
             margin: 5px auto;
             max-width: 100%;
-            padding: 20;
-
-            .coment-box{
-                max-width: 500px;
-            }
+        }
+        .coment-box{
+            max-width: 365px;
         }
     }        
     .questions{
