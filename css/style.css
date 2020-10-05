@@ -640,6 +640,9 @@ h3 {
     max-width: 100%;
     padding: 20;
   }
+  .information-regione .layout .coment-box {
+    max-width: 500px;
+  }
   .questions .input-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
