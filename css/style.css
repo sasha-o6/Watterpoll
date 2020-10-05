@@ -654,7 +654,7 @@ h3 {
 
 @media (min-width: 3000px) {
   * {
-    font-size: 1.11em;
+    font-size: 1.099em;
   }
   .benefits-box {
     width: auto;
