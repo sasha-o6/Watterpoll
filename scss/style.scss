@@ -1,12 +1,11 @@
 $color-lightblue: #00bee4;
-$color-black: rgb(51,51,51);
-$grey-color: rgb(108,117,125);
-$color-border: rgb(229,229,229);
+$color-black: rgb(51, 51, 51);
+$grey-color: rgb(108, 117, 125);
+$color-border: rgb(229, 229, 229);
 $color-background-hover: #494949;
 $transition-time: 0.4s;
-
-@font-face{
-    font-family: 'Ubuntu';    
+@font-face {
+    font-family: 'Ubuntu';
     src: url('../fonts/Ubuntu-Bold.ttf');
     src: url('../fonts/Ubuntu-BoldItalic.ttf');
     src: url('../fonts/Ubuntu-Italic.ttf');
@@ -15,105 +14,103 @@ $transition-time: 0.4s;
     src: url('../fonts/Ubuntu-Medium.ttf');
     src: url('../fonts/Ubuntu-MediumItalic.ttf');
     src: url('../fonts/Ubuntu-Regular.ttf');
-    font-weight: normal;    
+    font-weight: normal;
     font-style: normal;
 }
 
-body{
+body {
     background: white;
     margin: 0;
     cursor: default;
     width: 100%;
 }
 
-.text{
+.text {
     font-family: 'Ubuntu', sans-serif;
     margin-top: 12px;
     margin-bottom: 12px;
     color: $color-black;
-    text-decoration: none;  
-
-    &.-grey{
+    text-decoration: none;
+    &.-grey {
         color: $grey-color;
     }
-    &.-white{
+    &.-white {
         color: white;
     }
-    &.-weight{
+    &.-weight {
         font-weight: 400;
     }
 }
 
-*{
+* {
     font-size: 1.009em;
 }
 
-h1, .text.-big{
+h1,
+.text.-big {
     font-size: 2em;
 }
-h2{
+
+h2 {
     font-size: 1.4em;
 }
-h3{
+
+h3 {
     font-size: 1.25em;
 }
 
-.container{
+.container {
     display: flex;
     width: 100%;
 }
 
-.layout{
+.layout {
     display: flex;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.header-regione{
+.header-regione {
     display: flex;
     margin-left: 15px;
     margin-right: 15px;
     margin: 40px 15px;
-
-    .container{
+    .container {
         height: 100%;
     }
-    .layout{
+    .layout {
         height: 100%;
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-        
-    .header-text{
+    .header-text {
         margin-top: auto;
         margin-bottom: auto;
     }
-
-    .header-info{
+    .header-info {
         display: flex;
         margin-left: auto;
         margin-top: auto;
         margin-bottom: auto;
     }
-
-    .icons{
+    .icons {
         padding: 20px 15px;
         margin: auto 5px;
-        color: $color-lightblue;        
+        color: $color-lightblue;
         font-size: 170%;
     }
 }
 
-.dark-regione{
-    .container{
+.dark-regione {
+    .container {
         background: $color-black;
         justify-content: start;
     }
 }
 
-.dark-header{
+.dark-header {
     display: flex;
     width: 100%;
     height: 50px;
@@ -125,38 +122,35 @@ h3{
     padding: 15px 20px;
     padding-left: 0px;
     text-align: center;
-
-    .text{
+    .text {
         padding: 10px 15px;
         transition: $transition-time;
-
-        &:hover{       
-        background: #222;
+        &:hover {
+            background: #222;
         }
     }
 }
 
-.section-regione{
-    .container{
-    background: url( "../img/ct_block_item_99760_911551_6_image.jpg") ;
-    height: 400px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;    
+.section-regione {
+    .container {
+        background: url("../img/ct_block_item_99760_911551_6_image.jpg");
+        height: 400px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
-.under-header{
+.under-header {
     width: 100%;
     margin: auto auto;
     text-align: center;
-
-    .text{
+    .text {
         margin-bottom: 25px;
     }
 }
 
-.button{
+.button {
     margin-bottom: 35px;
     padding: 7px 20px;
     border-radius: 23px;
@@ -165,60 +159,55 @@ h3{
     background-color: $color-lightblue;
     color: white;
     transition: $transition-time;
-
-    &:hover{
+    &:hover {
         background: $color-background-hover;
     }
 }
 
-.services-info{
+.services-info {
     margin-top: 60px;
     margin-bottom: 60px;
-    
-    .container{
+    .container {
         flex-direction: column;
     }
 }
 
-.services{
+.services {
     text-align: center;
     margin: 30px;
 }
 
-.line{
+.line {
     height: 0.1em;
     width: 5em;
     margin: 45px auto;
     background-color: $color-black;
 }
 
-.services-cards{
+.services-cards {
     margin: 30px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-    .cards-box{
+    .cards-box {
         display: flex;
         flex-direction: column;
-        max-width:440px;
+        max-width: 440px;
         margin: 15px;
         text-align: center;
         border: 1px solid $color-border;
         border-radius: 10px;
-        
-        .text-box{
+        .text-box {
             padding: 15px;
         }
-        .button{
+        .button {
             margin-top: auto;
         }
-        .text{
+        .text {
             margin-bottom: 25px;
         }
     }
-
-    .image{
+    .image {
         width: 100%;
         height: 70%;
         border-top-left-radius: 10px;
@@ -226,35 +215,35 @@ h3{
     }
 }
 
-.benefits-regione{
-    .container{
-    margin-top: 60px;
-    background: url(../img/background-poll.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    min-height: 500px;
-    margin: 50px 0;
+.benefits-regione {
+    .container {
+        margin-top: 60px;
+        background: url(../img/background-poll.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        margin: 50px 0;
     }
-    .line{
+    .line {
         background-color: white;
         margin-top: 30px;
     }
-    .layout{
+    .layout {
         flex-direction: column;
         text-align: center;
     }
-    .title{
+    .title {
         margin-top: 60px;
     }
-    .benefits-card{
+    .benefits-card {
         display: flex;
         justify-content: space-evenly;
         text-align: center;
         flex-wrap: wrap;
     }
-    .fa{
+    .fa {
         padding: 0.7em;
         background-color: white;
         color: $color-lightblue;
@@ -263,42 +252,40 @@ h3{
         cursor: pointer;
         transition: $transition-time;
         margin-bottom: 0.3em;
-
-        &:hover{
+        &:hover {
             color: white;
             background-color: $color-background-hover;
             transform: scale(1.07);
             border-color: $color-background-hover;
         }
     }
-    .benefits-box{
+    .benefits-box {
         width: auto;
         max-width: 800px;
         margin: 25px;
     }
 }
 
-.advantages-regione{
+.advantages-regione {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
-
-    .content-box{
+    .content-box {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin: 30px;
     }
-    .text{
-        &.-number{
+    .text {
+        &.-number {
             color: $color-lightblue;
             font-size: 5em;
             padding: 0.3em;
             padding-bottom: 15px;
         }
     }
-    .layout{
+    .layout {
         flex-direction: column;
         text-align: center;
         margin-top: 30px;
@@ -306,39 +293,36 @@ h3{
     }
 }
 
-.about-company{
+.about-company {
     display: flex;
     flex-wrap: wrap;
-
-    .left-side{
+    .left-side {
         background-color: #F9F9F9;
         width: 50%;
         padding: 60px;
-
-        .text-box{
-            .text{
+        .text-box {
+            .text {
                 margin-top: 40px;
                 margin-bottom: 40px;
-                font-family:  'Ubuntu', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
                 font-weight: 300;
             }
         }
     }
-    .right-side{
+    .right-side {
         background-image: url(../img/image.jpg);
         padding: 60px;
         width: 50%;
         background-position: center center;
         background-size: cover;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat;
     }
 }
 
-.questions{
+.questions {
     color: #555555;
     background-color: #F9F9F9;
-    
-    .layout{
+    .layout {
         flex-direction: column;
         text-align: center;
         margin: 30px;
@@ -347,25 +331,26 @@ h3{
     }
 }
 
-.form-box{
+.form-box {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     margin: 15px;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
-
-    .input-box{
+    .input-box {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 }
-.first-row{
+
+.first-row {
     margin-top: 20px;
     margin-bottom: 20px;
     height: 15px;
@@ -373,188 +358,187 @@ h3{
     background-color: #ffffff;
     border: 2px solid #DDD;
 }
-.text-area{
+
+.text-area {
     height: 10em;
     align-items: flex-start;
     resize: vertical;
     margin: 1em 0;
 }
 
-.questions,.feedback-regione{
-    .layout{
+.questions,
+.feedback-regione {
+    .layout {
         max-width: 1150px;
     }
 }
 
-.feedback-regione{
-    .layout{
+.feedback-regione {
+    .layout {
         margin-top: 20px;
         flex-direction: column;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
-    .line{
+    .line {
         margin-left: auto!important;
         margin-right: auto!important;
     }
-    .text{
+    .text {
         margin-left: auto;
         margin-right: auto;
-    }    
-    .text-area{
+    }
+    .text-area {
         margin: 10px 0;
     }
 }
-.button{
+
+.button {
     text-decoration: none;
     width: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: $color-lightblue;
     cursor: pointer;
-
-    &:hover{
+    &:hover {
         color: $color-black;
     }
 }
 
-.footer{
-    .container{
+.footer {
+    .container {
         background-color: $color-black;
     }
-    .layout{
+    .layout {
         justify-content: center;
         margin: 25px;
     }
-    .text{
+    .text {
         color: #cccccc;
     }
 }
 
-.information-regione{
-    .adres{    
+.information-regione {
+    .adres {
         color: $grey-color;
         text-decoration: none;
         font-weight: 100;
     }
-    .layout{
+    .layout {
         flex-direction: column;
         margin: 20px auto;
         max-width: 55%;
         padding: 60px;
-        .line{            
+        .line {
             margin: 30px 0;
         }
-        .text{
+        .text {
             margin-bottom: 30px;
             font-family: Ubuntu, sans-serif;
             font-weight: 100;
         }
     }
-    .info-box{
-        margin: 20px 0;    
+    .info-box {
+        margin: 20px 0;
     }
-    .feedback-box{
+    .feedback-box {
         display: flex;
         margin: 1em 0;
-
-        .text{
+        .text {
             margin: 3px;
             font-weight: 0;
         }
-        .icon{
+        .icon {
             margin: auto 0px;
             margin-left: 15px;
             color: $color-lightblue;
-            font-size: 3em;            
+            font-size: 3em;
         }
-        .coment-box{
+        .coment-box {
             margin: auto 15px;
         }
     }
 }
 
-.poll-box, .slides-box, .natural-box{
+.poll-box,
+.slides-box,
+.natural-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 3em;
-
-    .image{
+    .image {
         margin-left: auto;
         margin-right: auto;
         max-width: 100%;
     }
 }
 
-@media (max-width: 930px){
-    .container{
+@media (max-width: 930px) {
+    .container {
         margin-left: auto;
-        margin-right: auto;  
+        margin-right: auto;
     }
-    .layout{
+    .layout {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    .header-regione{
+    .header-regione {
         height: 200px;
         text-align: center;
-        .layout{
+        .layout {
             max-width: 100%;
             flex-direction: column;
             margin-left: 10px;
             margin-right: 10px;
-
-            .header-text{
+            .header-text {
                 margin-top: 50px;
                 margin: auto;
             }
         }
-        .header-info{
+        .header-info {
             visibility: hidden;
             height: 0;
             margin: 0;
         }
     }
-    .about-company{
-        .left-side{
+    .about-company {
+        .left-side {
             background-image: url(../img/ct_block_item_99760_911551_6_image.jpg);
             background-attachment: fixed;
             background-position: center center;
             background-size: cover;
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
             width: 100%;
             text-align: center;
-
-            .text{
+            .text {
                 color: white;
-            }          
+            }
         }
-        .right-side{
+        .right-side {
             width: 0;
             padding: 0;
         }
     }
-    .information-regione{
-        .layout{
+    .information-regione {
+        .layout {
             flex-direction: column;
             margin: 5px auto;
             max-width: 100%;
         }
-        .coment-box{
+        .coment-box {
             max-width: 365px;
         }
-    }        
-    .questions{
-        .input-box{
+    }
+    .questions {
+        .input-box {
             flex-direction: row;
-            
-            .first-row{
+            .first-row {
                 width: 100%;
                 margin-bottom: 0;
             }
@@ -562,26 +546,26 @@ h3{
     }
 }
 
-@media (min-width: 3000px){
-    *{
+@media (min-width: 3000px) {
+    * {
         font-size: 1.11em;
     }
-  
-   .benefits-box{
+    .benefits-box {
         width: auto;
     }
-    .questions, .feedback-regione{
-        .layout{
+    .questions,
+    .feedback-regione {
+        .layout {
             max-width: 2000px;
-            .first-row{
+            .first-row {
                 height: 1.5em;
             }
-            .text-area{
+            .text-area {
                 height: 10em;
             }
         }
-    } 
-    .services-cards .cards-box{
+    }
+    .services-cards .cards-box {
         max-width: 900px;
     }
 }
