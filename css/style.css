@@ -1,21 +1,22 @@
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 2.5em;
+  right: 3em;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgba(32, 33, 36, 0.3);
+  opacity: 0.4;
+  background-color: rgba(32, 33, 36, 0);
+  background-image: url("../img/upwards-arrow.svg");
+  background-repeat: no-repeat;
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 10px;
-  font-size: 2em;
 }
 
 #myBtn:hover {
-  background-color: rgba(53, 54, 58, 0.9);
+  opacity: 1;
 }
 
 @font-face {
