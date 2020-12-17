@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tropical Islands</title>
     <script src="https://kit.fontawesome.com/4b94fb6972.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=580px, initial-scale=0.6" maximum-scale=1.0/>
+    <meta name="viewport" content="width=580px, initial-scale=0.6" maximum-scale=1.0 />
     <meta name="keywords" content="Tropical Islands, Аквапарк">
     <meta name="description" content="Tropical Islands, Аквапарк">
     <link rel="stylesheet" href="css/style.css" />
@@ -105,7 +105,7 @@
                             </div>
                             <textarea class="text first-row text-area" placeholder="Відгук"></textarea>
                         </div>
-                        <a class="button text" href="">Відправити</a>                            
+                        <a class="button text" href="">Відправити</a>
                     </form>
                 </div>
             </div>
@@ -140,5 +140,27 @@
             </div>
         </div>
     </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 
 </html>

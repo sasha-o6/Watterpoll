@@ -11,6 +11,7 @@
     <meta name="keywords" content="Tropical Islands, Аквапарк">
     <meta name="description" content="Tropical Islands, Аквапарк">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="script" href="js/script.js">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icon_title/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icon_title/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icon_title/favicon-16x16.png">
@@ -21,6 +22,7 @@
 
 <body>
     <header class="header-regione">
+
         <div class="container">
             <div class="layout">
                 <div class="header-text">
@@ -74,7 +76,7 @@
                 <div class="services-cards">
                     <div class="cards-box">
                         <img class="image" src="img/big_poll.jpg" alt="">
-                        <div class="text-box">                            
+                        <div class="text-box">
                             <h3 class="text">Обширні басейни</h3>
                             <p class="text">У нашому аквапарку досить обширні басейни, <br>
                                 одні з найбільших у країні.</p>
@@ -83,7 +85,7 @@
                     </div>
                     <div class="cards-box">
                         <img class="image" src="img/fun.jpg" alt="">
-                        <div class="text-box">                            
+                        <div class="text-box">
                             <h3 class="text">Круті гірки</h3>
                             <p class="text">Одні з найвищих і найкрутіших гірок у країні.</p>
                         </div>
@@ -91,7 +93,7 @@
                     </div>
                     <div class="cards-box">
                         <img class="image" src="img/natural.jpg" alt="">
-                        <div class="text-box">                            
+                        <div class="text-box">
                             <h3 class="text">Унікальна природа</h3>
                             <p class="text">Затишну атмосфера і незабутні враження</p>
                         </div>
@@ -206,5 +208,26 @@
             </div>
         </div>
     </footer>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </html>

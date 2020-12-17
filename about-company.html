@@ -77,7 +77,8 @@
                         Унікальний дизайн занурює нас у загублений світ стародавньої цивілізації. Інтер’єр гармонійно
                         доповнюють атракціони, плавальний та ігрові басейни.</p>
                     <p class="text"> "Tropical Islands" – поєднує інноваційні ідеї, сучасні технології, та затишну
-                        сімейну атмосферу. Активно відпочити на гірках та атракціонах, розслабитися після трудового дня чи позбутися зайвих
+                        сімейну атмосферу. Активно відпочити на гірках та атракціонах, розслабитися після трудового дня
+                        чи позбутися зайвих
                         калорій, усе це, та багато іншого Ви зможете зробити у аквапарку "Tropical Islands".</p>
                     <p class="text">Система безпеки аквапарку спеціально розроблена комп’ютерним моделюванням, усі
                         атракціони сертифіковані, а басейни обладнані найсучаснішими системами очистки води. Даний
@@ -118,5 +119,27 @@
             </div>
         </div>
     </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 
 </html>
