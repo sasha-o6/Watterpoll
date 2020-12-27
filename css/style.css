@@ -709,4 +709,11 @@ h3 {
     max-width: 900px;
   }
 }
+
+#canvas {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid red;
+  background-color: white;
+}
 /*# sourceMappingURL=style.css.map */
