@@ -614,3 +614,11 @@ h3{
     border: 1px solid red;
     background-color: white;
 }
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: #DDD;
+}
